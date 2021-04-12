@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>RunSmart</title>
@@ -34,9 +33,23 @@
       <h2 class="promo__subheader">з урахуванням вашого рівня підготовки</h2>
 
       <div class="promo__icons">
-        <div class="promo__icon"><img src="icons/main_screen/timer.svg" alt="timer">Час підбору: 10 хвилин</div>
-        <div class="promo__icon"><img src="icons/main_screen/delivery.svg" alt="delivery">Безкоштовна доставка</div>
-        <div class="promo__icon"><img src="icons/main_screen/messages.svg" alt="messages">Відповімо на всі питання
+        <div class="promo__icon">
+          <div class="promo__img">
+            <img src="icons/main_screen/timer.svg" alt="timer">
+          </div>
+            Час підбору: 10 хвилин
+        </div>
+        <div class="promo__icon">
+          <div class="promo__img">
+            <img src="icons/main_screen/delivery.svg" alt="delivery">
+          </div>
+          Безкоштовна доставка
+        </div>
+        <div class="promo__icon">
+          <div class="promo__img">
+            <img src="icons/main_screen/messages.svg" alt="messages">
+          </div>
+          Відповімо на всі питання
         </div>
       </div>
 
@@ -106,14 +119,49 @@
         <img src="img/slider/slider_watch_3.png" alt="watch_3">
       </div>
     </div>
-    <button type="button" class="prev"><img src="icons/leftArrow.svg"></button>
-    <button type="button" class="next"><img src="icons/rightArrow.svg"></button>
+    <button type="button" class="prev"><img src="icons/leftArrow.svg" alt="arrow"></button>
+    <button type="button" class="next"><img src="icons/rightArrow.svg" alt="arrow"></button>
   </div>
 </section>
-<!--
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/slick.min.js"></script> -->
+
+<section class="catalog">
+  <div class="container">
+    <h2 class="title">каталог пульсометрів</h2>
+    <ul class="catalog__tabs">
+      <li class="catalog__tab catalog__tab_active"><div>для фітнесу</div></li>
+      <li class="catalog__tab"><div>для бігу</div></li>
+      <li class="catalog__tab"><div>для триатлона</div></li>
+    </ul>
+
+    <div class="catalog__content">
+      <div class="catalog-item">
+        <div class="catalog-item__wrapper">
+          <div class="catalog-item__content catalog-item__content_active">
+            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+            <div class="catalog-item__descr">Для перших кроків в тренуваннях, заснованих на серцевому ритмі</div>
+            <a href="#" class="catalog-item__link">докладніше</a>
+          </div>
+          <ul class="catalog-item__list">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor et eum ex excepturi illo modi, molestias natus nostrum numquam omnis quas quos repellendus sint tenetur! Doloremque ex iure modi?
+          </ul>
+        </div>
+        <hr>
+
+        <div class="catalog-item__footer">
+          <div class="catalog-item__prices">
+            <div class="catalog-item__old-price">1717 грн.</div>
+            <div class="catalog-item__price">1626 грн.</div>
+          </div>
+          <button class="button button_mini">купити</button>
+        </div>
+      </div>
+    </div>
+    <div class="catalog__content"></div>
+    <div class="catalog__content"></div>
+  </div>
+</section>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="js/script.js"></script>
 

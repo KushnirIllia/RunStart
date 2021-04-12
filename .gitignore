@@ -9,7 +9,8 @@
 # production
 /build
 
-.vscode
+# intellij configs
+.idea/
 # misc
 .DS_Store
 .env.local
