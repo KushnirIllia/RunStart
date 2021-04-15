@@ -14,13 +14,6 @@ const slider = tns({
       nav: true,
       navPosition: "bottom"
     },
-    991: {
-      gutter: 30,
-    },
-    767: {
-      width: 150,
-      gutter: 45
-    },
   }
 })
 document.querySelector('.prev').addEventListener('click', function () {

@@ -11,7 +11,8 @@
 
 # intellij configs
 /.idea
-.idea
+
+/sass
 # misc
 .DS_Store
 .env.local

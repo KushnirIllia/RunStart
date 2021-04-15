@@ -23,15 +23,17 @@
     padding: 0
 @media ( max-width: 991px )
   .container
-    max-width: 765px
+    max-width: 690px
     padding: 0 10px
+  .title
+    font-size: 25px
   .consultation
     min-height: 554px
     padding: 64px 0
     &__descr
       font-size: 19px
-  .title
-    font-size: 28px
+    .title
+      font-size: 28px
   .feed-form
     margin-top: 30px
     width: 275px
@@ -41,7 +43,7 @@
     .button
       height: 56px
   .carousel
-    padding: 40px 0
+    padding: 20px 0
     .tns-item
       img
         min-height: 360px
@@ -50,9 +52,7 @@
       display: flex
       width: 100px
   .catalog
-    padding: 0
-    .title
-      font-size: 25px
+    padding: 20px 0
     &__tabs
       margin-top: 24px
       max-width: 520px
@@ -75,6 +75,23 @@
       &__link
         margin-top: 10px
         font-size: 13px
+  .reviews
+    &__item
+      width: 590px
+      margin-top: 40px
+    &__info
+      max-width: 530px
+      .title
+        font-size: 16px
+    &__subtitle
+      font-size: 13px
+    &__img
+      width: 144px
+      height: 144px
+    &__descr
+      line-height: 22px
+      max-width: 410px
+      font-size: 14px
 @media ( max-width: 767px )
   .container
     max-width: 570px
@@ -95,11 +112,11 @@
       height: 30px
   .consultation
     min-height: 479px
-    padding: 52px 0
+    padding: 27px 0
     &__descr
       font-size: 17px
-  .title
-    font-size: 22px
+    .title
+      font-size: 22px
   .feed-form
     margin-top: 30px
     width: 250px
@@ -110,6 +127,7 @@
       font-size: 15px
       height: 53px
   .carousel
+    padding: 25px 0
     .tns-item
       img
         min-height: 312px
@@ -118,6 +136,7 @@
         img
           width: 280px
   .catalog
+    padding-left: 0
     &__content
       margin-top: 30px
     &-item
@@ -138,6 +157,26 @@
         li
           padding-left: 30px
           max-width: 210px
+  .title
+    font-size: 25px
+  .reviews
+    &__item
+      width: 530px
+      margin-top: 40px
+    &__info
+      max-width: 380px
+      .title
+        font-size: 15px
+    &__subtitle
+      font-size: 13px
+    &__img
+      width: 110px
+      height: 110px
+    &__descr
+      margin-top: 5px
+      line-height: 21px
+      max-width: 390px
+      font-size: 14px
 @media ( max-width: 575px )
   .container
     max-width: 340px
@@ -213,7 +252,7 @@
         margin-top: 5px
   .consultation
     min-height: 417px
-    padding: 35px 0
+    padding: 16px 0
     &__descr
       font-size: 16px
       text-align: center
@@ -230,6 +269,7 @@
       .button
         height: 43px
   .carousel
+    padding: 16px 0
     .tns-item
       img
         min-width: 240px //470px
@@ -242,10 +282,12 @@
         img
           transform: translate(calc(-50% - 6px), -50%)
     &__nav
+      width: 90px
       div
         height: 11px
         width: 11px
   .catalog
+    padding-left: 10px
     .title
       font-size: 18px
     &__tabs
@@ -269,3 +311,22 @@
         margin-top: 6px
       &__footer
         margin-top: 10px
+  .reviews
+    padding: 15px 0
+    &__item
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 320px
+    &__info
+      max-width: 380px
+      text-align: center
+      margin: 20px auto
+      .title
+        margin: 0 auto
+    &__subtitle
+      margin: 0 auto
+    &__descr
+      line-height: 20px
+      max-width: 312px
+      text-align: center
