@@ -3,7 +3,7 @@ const slider = tns({
   items: 1,
   slideBy: 'page',
   controls: false,
-  speed: 1000,
+  speed: 1300,
   nav: false,
   rewind: false,
   preventScrollOnTouch: "force",
