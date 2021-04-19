@@ -10,7 +10,7 @@
 /build
 
 # intellij configs
-/.idea
+.idea/
 
 /sass
 # misc
