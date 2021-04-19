@@ -8,6 +8,62 @@
   color: #FFFFFF
   font-weight: 500
   font-size: 12px
+  transition: 0.4s all
+  position: relative
+  //&:before
+  //  position: absolute
+  //  content: ""
+  //  border-top: 2px solid lighten($main-color, 5%)
+  //  border-left: 2px solid lighten($main-color, 5%)
+  //  border-right: 2px solid darken($main-color, 5%)
+  //  border-bottom: 2px solid darken($main-color, 5%)
+  //
+  //  top: 0px
+  //  right: 0px
+  //  bottom: 0px
+  //  left: 0px
+  //&:hover
+  //  box-shadow: 7px 7px darken($main-color, 10%), -7px -7px desaturate($main-color, 20%)  //???????
+  //  cursor: pointer
+  //  &::before
+  //  border: 0px
+  .btn-three {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
   &_main
     margin-top: 67px
     width: 300px
