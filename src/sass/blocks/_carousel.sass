@@ -1,5 +1,5 @@
 .carousel
-  padding: 40px 0
+  padding: 50px 0
   &__inner
     position: relative
     width: 750px
@@ -43,3 +43,48 @@
       transition: 0.4s all
       &:active
         background: #dddddd
+  @media ( max-width: 1199px )
+    .prev, .next
+      display: none
+    &__nav
+      margin-top: 20px
+      display: flex
+    .tns-item
+      img
+        min-height:  400px
+  @media ( max-width: 991px )
+    padding: 43px 0
+    .tns-item
+      img
+        min-height: 360px
+    &__nav
+      margin-top: 10px
+      display: flex
+      width: 100px
+  @media ( max-width: 767px )
+    padding: 40px 0
+    .tns-item
+      img
+        min-height: 312px
+    &__inner
+      div:nth-child(3)
+        img
+          width: 280px
+  @media ( max-width: 575px )
+    padding: 35px 0
+    .tns-item
+      img
+        min-width: 240px //470px
+        min-height: 100px
+        width: 280px
+    .container
+      max-width: 490px
+    &__inner
+      div:nth-child(3)
+        img
+          transform: translate(calc(-50% - 6px), -50%)
+    &__nav
+      width: 90px
+      div
+        height: 11px
+        width: 11px

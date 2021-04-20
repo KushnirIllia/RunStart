@@ -1,6 +1,6 @@
 .promo
   max-height: 650px
-  padding: 21px 0 93px 0
+  padding: 47px 0 61px 0
   background: url('../img/bg/main_bg.png') center (center / cover) no-repeat
   &__wrapper
     display: flex
@@ -43,8 +43,7 @@
     img
       width: 100%
       display: block
-      margin: 0 auto
-      margin-bottom: 20px
+      margin: 0 auto 20px
   &__link
     color: #FFFFFF
     font-weight: 500
@@ -55,3 +54,45 @@
       text-decoration-line: underline
       font-weight: 500
       font-size: 16px
+  @media ( max-width: 767px )
+    &__subheader
+      font-size: 23px
+  @media ( max-width: 575px )
+    min-height: 350px
+    padding: 35px 0
+    background: url('../img/bg/main_bg_mobile.png') center (center / cover) no-repeat
+    &__header
+      margin-top: 32px
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+    &__wrapper
+      margin-top: 0
+      align-items: center
+    &__subheader
+      margin-top: 0
+      font-size: 13px
+      text-align: center
+    &__icons
+      margin-top: 20px
+      max-width: 320px
+      align-items: baseline
+      justify-content: center
+    &__icon
+      width: 110px
+      font-size: 13px
+    &__img
+      width: 106px
+      height: 60px
+      img
+        margin-bottom: 6px
+        width: 35%
+    .button_main
+      width: 212px
+      height: 43px
+      margin-top: 50px
+      font-size: 12px
+    &__link
+      font-size: 14px
+      a
+        font-size: 14px

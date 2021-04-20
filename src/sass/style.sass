@@ -5,6 +5,13 @@
   position: relative
   max-width: 950px
   margin: 0 auto
+  @media ( max-width: 991px )
+    max-width: 690px
+    padding: 0 10px
+  @media ( max-width: 767px )
+    max-width: 570px
+  @media ( max-width: 575px )
+    max-width: 340px
 @import "particles/header"
 @import "particles/buttons"
 @import "particles/title"
@@ -17,4 +24,4 @@
 @import "blocks/catalog"
 @import "blocks/reviews"
 @import "blocks/footer"
-@import "media"
+@import "blocks/modal"

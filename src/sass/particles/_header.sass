@@ -27,3 +27,23 @@
     display: flex
     flex-direction: column
     align-items: flex-end
+  @media ( max-width: 767px )
+    &__logo
+      width: 200px
+    &__official
+      font-size: 11px
+      span
+        font-size: 15px
+    &__phone
+      font-size: 15px
+    .button
+      width: 140px
+      height: 30px
+  @media ( max-width: 575px )
+    &__logo
+      width: 170px
+      margin: 0 auto
+    &__official
+      display: none
+    &__contact
+      display: none

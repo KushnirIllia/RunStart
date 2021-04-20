@@ -94,7 +94,7 @@
 
 <section class="consultation">
   <div class="container">
-    <h2 class="title title_left">Отримайте безкоштовну консультацію<br>по підбору пульсометра</h2>
+    <h2 class="consultation__title consultation__title_left">Отримайте безкоштовну консультацію<br>по підбору пульсометра</h2>
     <div class="consultation__descr">Просто заповніть форму заявки<br> і ми передзвонимо вам протягом 10 хвилин</div>
     <form action="#" class="feed-form">
       <input name="name" type="text" placeholder="Ваше ім'я" required>
@@ -474,6 +474,19 @@
   </div>
 </footer>
 
+<div class="overlay" style="display: none;">
+  <div class="modal">
+    <div class="modal__close">&times;</div>
+    <div class="modal__subtitle">Просто заповніть анкету</div>
+    <div class="modal__descr">і ми вам зателефонуємо через 10 хвилин.</div>
+    <form action="#" class="feed-form">
+      <input name="name" type="text" placeholder="Ваше ім'я" required>
+      <input name="phone" type="number" placeholder="Ваш телефон" required>
+      <input name="email" type="email" placeholder="Ваш E-mail" required>
+      <button type="submit" class="button button_submit">замовити консультацію</button>
+    </form>
+  </div>
+</div>
 <script src="https://kit.fontawesome.com/c205a08f36.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
