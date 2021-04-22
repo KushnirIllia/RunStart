@@ -1,5 +1,5 @@
 .consultation
-  max-height: 680px
+  min-height: 680px
   padding: 100px 0 108px 0
   background: url('../img/bg/consultation_bg.png') center (center / cover) no-repeat
   &__descr
@@ -16,6 +16,16 @@
       color: #FFFFFF
       font-size: 36px
       text-align: left
+  .feed-form
+    margin: 28px 0 0
+  .error
+    border: 1px solid $main-color
+    //text-align: center
+  label.error
+    color: #FFFFFF
+    border: none
+    text-align: center
+    margin-bottom: 15px  
   @media ( max-width: 991px )
     min-height: 554px
     padding: 64px 0
@@ -40,3 +50,5 @@
       font-size: 18px
       text-align: center
       letter-spacing: 0.3px
+    .feed-form
+      margin: 20px auto 0

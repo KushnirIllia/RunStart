@@ -1,10 +1,11 @@
 .overlay
+  display: none
   position: fixed
   width: 100%
   height: 100%
   top: 0
   background: rgba(0, 0, 0, 0.56)
-  mix-blend-mode: normal
+  z-index: 4
 .modal
   position: absolute
   top: 50%
@@ -21,6 +22,7 @@
     color: $main-color
     font-size: 41px
     line-height: 21px
+    cursor: pointer
   &__subtitle
     color: #0D0D0D
     text-align: center
@@ -32,5 +34,39 @@
     text-align: center
     font-weight: 500
     font-size: 14px
-  .feed-form
-    margin: 0 auto
+    margin-top: 5px
+  //&_mini
+  //  height: 140px
+  #thanks
+    height: 140px
+  .error
+    border: 1px solid $main-color
+    //text-align: center
+  label.error
+    border: none
+    text-align: center
+    margin-bottom: 15px
+  @media ( max-width: 1199px )
+    max-width: 355px
+    min-height: 125px
+    padding: 31px 35px
+    &__subtitle
+      font-size: 18px
+      line-height: 18px
+  @media ( max-width: 767px )
+    min-height: 125px
+    padding: 35px 32px
+    //&_mini
+    //  min-height: 140px
+  @media ( max-width: 575px )
+    max-width: 290px
+    min-height: 125px
+    padding: 30px
+    &__descr
+      font-size: 13px
+    //&_mini
+    //  min-height: 152px
+    //  padding: 28px 24px
+    //  max-width: 235px
+#consultation, #order, #thanks
+  display: none
